@@ -32,7 +32,7 @@ public class Server{
 
                 String message = in.readUTF();
 
-                System.out.println(message);
+                System.out.println(sc.getInetAddress().getHostAddress()+"'s: "+message);
                 
                 out.writeUTF("Message sent successfully");
 

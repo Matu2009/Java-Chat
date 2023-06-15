@@ -24,6 +24,7 @@ public class Cliente {
             out = new DataOutputStream(sc.getOutputStream());
 
             Scanner ch = new Scanner(System.in);
+            System.out.print("Message: ");
             String chat = ch.nextLine();
             out.writeUTF(chat);
 
